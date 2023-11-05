@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Definindo a configuração de viewport -->
+    <title>Organiza+</title> <!-- Definindo o título da página -->
+    <link href="style-tarefas.css" rel="stylesheet"> <!-- Link para o arquivo CSS-->
+    <link rel="icon" href="icone.ico"> <!-- Link para o ícone da página -->
+    <script>
+
+        function notificacao(){
+            alert('O usuário foi desconectado!'); // Função JavaScript para notificação
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="ajustes">
+        <img src="eu.jpg"> <!-- Imagem do usuário -->
+        <p>Olá Fabrício</p> <!-- Saudação ao usuário -->
+    </div>
+
+    <div class="alterar-senha">
+        <ion-icon name="key-outline"></ion-icon> <!-- Ícone de alteração de senha -->
+        <p>Alterar senha</p> <!-- Opção para alterar a senha -->
+    </div>
+
+    <div class="logoff">
+        <a href="index.html" onclick="notificacao()"> <!-- Link para logout com função de notificação -->
+            <p><ion-icon name="power-outline"></ion-icon>Sair</p> <!-- Ícone de saída e opção "Sair" -->
+        </a>
+    </div>
+
+    <iframe style="border-radius:12px" class="import-spotify" src="https://open.spotify.com/embed/playlist/7JabddFr3Q6JPsND4v9Swf?utm_source=generator&theme=0" width="350" height="152" frameBorder="0" allowfullscreen="" allow="play; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> <!-- Incorporação de playlist do Spotify -->
+    <main>
+        <div class="img-logo"></div> <!-- Logo da aplicação -->
+        <form class="add-tarefas">
+            <input type="text" placeholder="Insira o nome da tarefa" class="input-tarefa"> <!-- Input para adicionar tarefas -->
+            <button type="submit" href="#">+</button> <!-- Botão para adicionar tarefas -->
+        </form>
+        <table>
+            <thead class="cabeçalho">
+                <tr>
+                    <th>Criada em</th> <!-- Cabeçalho da coluna "Criada em" -->
+                    <th>Tarefa</th> <!-- Cabeçalho da coluna "Tarefa" -->
+                    <th>Prazo</th> <!-- Cabeçalho da coluna "Prazo" -->
+                    <th>Status</th> <!-- Cabeçalho da coluna "Status" -->
+                    <th class="opcoes">Opções</th> <!-- Cabeçalho da coluna "Opções" -->
+                </tr>
+            </thead>
+
+            <tbody>
+<!-- Tarefa 01-->
+                <tr>
+                    <td>14/11/2023</td> 
+                    <td>Criar um site</td> 
+                    <td><input type="date" class="ent-data"></td> 
+                    <td><select> 
+                        <option value="pendente">Pendente</option>
+                        <option value="em andamento">Em andamento</option>
+                        <option value="concluida">Concluída</option>
+                    </select>
+                    </td>
+                    <td>
+                        <button type="button" class="bt-opcoes"><ion-icon name="create-outline"></ion-icon></button> <!-- Botão para edição da tarefa 01 -->
+                        <button type="button" class="bt-opcoes"><ion-icon name="trash-outline"></ion-icon></button> <!-- Botão para exclusão da tarefa 01 -->
+                    </td>
+                </tr>
+<!-- Tarefa 02-->
+                <tr>
+                    <td>14/11/2023</td> 
+                    <td>Ajustar no Javascript</td> 
+                    <td><input type="date" class="ent-data"></td> 
+                    <td><select> 
+                        <option value="pendente">Pendente</option>
+                        <option value="em andamento">Em andamento</option>
+                        <option value="concluida">Concluída</option>
+                    </select>
+                    </td>
+                    <td>
+                        <button type="button" class="bt-opcoes"><ion-icon name="create-outline"></ion-icon></button> 
+                        <button type="button" class="bt-opcoes"><ion-icon name="trash-outline"></ion-icon></button> 
+                    </td>
+                </tr>
+<!-- Tarefa 03-->
+                <tr>
+                    <td>14/11/2023</td> 
+                    <td>Finalizar trabalho</td> 
+                    <td><input type="date" class="ent-data"></td> 
+                    <td><select> 
+                        <option value="pendente">Pendente</option>
+                        <option value="em andamento">Em andamento</option>
+                        <option value="concluida">Concluída</option>
+                    </select>
+                    </td>
+                    <td>
+                        <button type="button" class="bt-opcoes"><ion-icon name="create-outline"></ion-icon></button>
+                        <button type="button" class="bt-opcoes"><ion-icon name="trash-outline"></ion-icon></button> 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!-- Carregamento do módulo Ionicons -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> <!-- Carregamento do script Ionicons para navegadores mais antigos -->
+</body>
+</html>

@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url('fundo.jpg');
+    background-size: cover;
+}
+
+main{
+    padding: 35px;
+    width: 45%;
+    border:1px solid grey;
+    border-radius: 10px;
+    margin: 5px auto;
+    box-shadow: 0 0 5px gray;
+    backdrop-filter: blur(15px);
+    
+}
+.img-logo{
+    display: flex;
+    margin:10px 35%;
+    padding: 35px;
+    width: 140px;
+    height: 100%;
+    background-image: url('logo.svg');
+    background-size: cover;
+}
+.add-tarefas{
+    padding-top: 15px;
+    margin: 0;
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    gap: 10px;
+}
+
+.add-tarefas input{
+    width: 100%;
+    height: 30px;
+    box-shadow: 0 0 3px grey;
+    border-radius: 5px;
+    border: 1px solid;
+    outline: none;
+}
+
+.add-tarefas button{
+    background-color: blueviolet;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+td,th{
+    padding: 10px 5px;
+    border: 1px solid grey;
+}
+
+th{
+    border-color: grey white;
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+    background-color: blueviolet;
+}
+
+td{
+    text-align: center;
+    font-size: 14px;
+}
+.import-spotify{
+    position: absolute;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+select{
+    height: 30px;
+    border-radius: 5px;
+}
+
+.bt-opcoes{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(107, 2, 98);
+    border-radius: 5px;
+    border: 1px solid;
+    color: white;
+    cursor: pointer;
+    display:inline;
+}
+
+.ent-data{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.ajustes{
+    gap: 10px;
+    margin-left: 85%;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(25px);
+    cursor:pointer;
+}
+
+.ajustes p{
+    padding: 5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ajustes img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid grey;
+}
+
+.opcoes{
+    width: 85px;
+}
+
+.alterar-senha{
+    position: absolute;
+    gap: 10px;
+    margin-left: 85%;
+    display: flex;
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    cursor:pointer;
+}
+
+.logoff{
+    position: absolute;
+    background-color: crimson;
+    gap: 10px;
+    margin-left: 91%;
+    margin-top: 650px;
+    display: flex;
+    width: 100px;
+    height: 25px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    border-radius: 20px;
+    transition: all 0.3s;
+    border: 2px solid white;
+}
+
+.logoff a{
+    text-decoration: none;
+    color: white;
+}
+
+.logoff:hover{
+    background-color: darkred;
+    box-shadow: 0 0 5px grey;
+}
