@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url('/img/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    
+    padding: 35px;
+    width: 45%;
+    max-height: 580px;
+    border:1px solid grey;
+    border-radius: 6px;
+    margin: 5px auto;
+    box-shadow: 0 0 5px gray;
+    backdrop-filter: blur(15px);
+    overflow-y: auto;
+    scrollbar-width: thin; /* Define o tamanho da barra de rolagem como "fino" */
+    
+}
+
+main::-webkit-scrollbar {
+
+    width: 5px;
+}
+
+main::-webkit-scrollbar-thumb {
+    border-radius:20px;
+    background: rgba(202, 21, 163, 0.7); /* Define a cor da barra de rolagem */
+}
+.img-logo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 35px;
+    width: 140px;
+    height: 5px;
+    background-image: url('/img/logo.svg');
+    background-size: cover;
+    margin: auto;
+}
+
+.add-tarefas{
+    padding-top: 15px;
+    margin: 0;
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    gap: 10px;
+}
+
+.add-tarefas input{
+    padding-left: 10px;
+    width: 100%;
+    height: 30px;
+    box-shadow: 0 0 3px grey;
+    border-radius: 5px;
+    border: 1px solid;
+    outline: none;
+}
+
+.add-tarefas button{
+    background-color: blueviolet;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+td,th{
+    padding: 10px 5px;
+    border: 1px solid grey;
+}
+
+th{
+    border-color: grey white;
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+    background-color: blueviolet;
+}
+
+tr{
+    backdrop-filter: blur(0);
+}
+
+td{
+    text-align: center;
+    font-size: 14px;
+}
+.import-spotify{
+    position: absolute;
+    margin-left: 2%;
+    margin-bottom: 30px;
+    border: 2px solid white;
+}
+
+select{
+    height: 30px;
+    border-radius: 5px;
+}
+
+.bt-opcoes{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(107, 2, 98);
+    border-radius: 5px;
+    border: 1px solid;
+    color: white;
+    cursor: pointer;
+    display:inline;
+    transition: all 0.5s;
+}
+
+.bt-opcoes:hover{
+    transform: translateY(-3px);
+    background-color: darkorchid;
+}
+
+.ent-data{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.ajustes{
+    gap: 10px;
+    margin-left: 85%;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(25px);
+    cursor:pointer;
+}
+
+.ajustes p{
+    padding: 5px;
+    font-size: 15px;
+}
+
+.ajustes img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid grey;
+}
+
+.opcoes{
+    width: 85px;
+}
+
+.alterar-senha{
+    position: absolute;
+    gap: 10px;
+    margin-left: 85%;
+    display: flex;
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    cursor:pointer;
+}
+
+.logoff{
+    position: absolute;
+    background-color: crimson;
+    gap: 10px;
+    margin-left: 88.7%;
+    margin-top: 43%;
+    display: flex;
+    width: 100px;
+    height: 25px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    border-radius: 20px;
+    transition: all 0.3s;
+    border: 2px solid white;
+}
+
+.logoff a{
+    text-decoration: none;
+    color: white;
+}
+
+.logoff:hover{
+    background-color: darkred;
+    box-shadow: 0 0 5px grey;
+}
+
+.alterar-senha-completo{
+    margin-left: 83.5%;
+    width: 15%;
+    height: 180px;
+    color: white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    border: 1px solid grey;
+    box-shadow: 0 0 10px gray;
+}
+
+.alterar-senha-cabecalho{
+    display: flex;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 7px;
+    padding: 5px;
+    gap: 10px;
+}
+
+.alterar-senha-cabecalho button{
+    position: absolute;
+    width: 25px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin-left: 87%;
+    cursor: pointer;
+}
+
+
+.alterar-senha-conteudo input{
+    padding-left: 10px;
+    font-size: 12px;
+    width: 90%;
+    height: 25px;
+    margin: 4px;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+
+.alterar-senha-conteudo button{
+    color: white;
+    background-color: blueviolet;
+    width: 93%;
+    height: 35px;
+    margin: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 25px;
+}

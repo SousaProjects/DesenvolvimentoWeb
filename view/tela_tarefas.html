@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organiza+</title>
+    <link href="/style/style-tarefas.css" rel="stylesheet">
+    <link rel="icon" href="/img/icone.ico">
+
+</head>
+
+<body>
+
+    <!-- Ajustes no topo da página-->
+    <div class="ajustes">
+        <img src="/img/fabricio.png">
+        <p>Olá Fabrício</p>
+    </div>
+
+    <!-- Caixa de alterar senha no topo da página-->
+    <div class="alterar-senha">
+        <ion-icon name="key-outline"></ion-icon>
+        <p id="alterar-senha">Alterar senha</p>
+    </div>
+
+    <!-- Caixa de logoff-->
+    <div class="logoff">
+        <a href="index.html" onclick="notificacao()">
+            <p><ion-icon name="power-outline"></ion-icon>Sair</p>
+        </a>
+    </div>
+
+    <!-- Importação do frame do Spotify-->
+    <iframe style="border-radius:12px" class="import-spotify" src="https://open.spotify.com/embed/playlist/7JabddFr3Q6JPsND4v9Swf?utm_source=generator&theme=0" width="350" height="152" frameBorder="0" allowfullscreen="" allow="play; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    
+    <main>
+        <!--Logo no topo da página-->
+        <div class="img-logo"></div>
+
+        <!--Formulário para adicionar tarefas-->
+        <form class="add-tarefas">
+            <input type="text" placeholder="Insira o nome da tarefa" class="input-tarefa">
+            <button type="submit" href="#" id="btn-adicionar-tarefa">+</button>
+        </form>
+
+        <!--Tabela com os dados inputados pelo usuário-->
+        <table>
+
+            <thead class="cabeçalho">
+                <tr>
+                    <th style="width: 80px;">Criada em</th>
+                    <th>Tarefa</th>
+                    <th style="width: 120px;">Prazo</th>
+                    <th style="width: 120px;">Status</th>
+                    <th class="opcoes">Opções</th>
+                </tr>
+            </thead>
+
+            <!-- Aqui serão inseridos as TR´s criadas pelo usuário-->
+            <tbody>
+
+            </tbody>
+            
+        </table>
+    </main>
+</body>
+
+<!-- Script de icones do ionicons-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- Script importado do controller-->
+<script src="/controller/controle_tela_tarefas.js"></script>
+
+</html>
